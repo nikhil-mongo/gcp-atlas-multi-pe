@@ -1,0 +1,7 @@
+output "mongodbatlas_privatelink_endpoint_service_attachment_name" {
+  value = mongodbatlas_privatelink_endpoint.isv_mongodbatlas_pvtlink_endpoint.service_attachment_names
+}
+
+output "mongodbatlas_privatelink_endpoint_private_link_id" {
+  value = mongodbatlas_privatelink_endpoint.isv_mongodbatlas_pvtlink_endpoint.private_link_id
+}
