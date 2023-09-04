@@ -50,9 +50,8 @@ resource "mongodbatlas_privatelink_endpoint_service" "isv_mongodbatlas_pvtlink_e
   project_id          = mongodbatlas_privatelink_endpoint.isv_mongodbatlas_pvtlink_endpoint.project_id
   private_link_id     = mongodbatlas_privatelink_endpoint.isv_mongodbatlas_pvtlink_endpoint.private_link_id
   provider_name       = "GCP"
-  endpoint_service_id = data.google_compute_network.vpc_compute_network.name
-  # endpoint_service_id = data.google_compute_network.vpc_compute_network.name
-  gcp_project_id = var.gcp_project_id_1
+  endpoint_service_id = var.endpoint_service_id_1
+  gcp_project_id      = var.gcp_project_id_1
 
   dynamic "endpoints" {
     for_each = mongodbatlas_privatelink_endpoint.isv_mongodbatlas_pvtlink_endpoint.service_attachment_names
@@ -95,9 +94,8 @@ resource "mongodbatlas_privatelink_endpoint_service" "isv_mongodbatlas_pvtlink_e
   project_id          = mongodbatlas_privatelink_endpoint.isv_mongodbatlas_pvtlink_endpoint.project_id
   private_link_id     = mongodbatlas_privatelink_endpoint.isv_mongodbatlas_pvtlink_endpoint.private_link_id
   provider_name       = "GCP"
-  endpoint_service_id = data.google_compute_network.vpc_compute_network2.name
-  # endpoint_service_id = data.google_compute_network.vpc_compute_network.name
-  gcp_project_id = var.gcp_project_id_2
+  endpoint_service_id = var.endpoint_service_id_2
+  gcp_project_id      = var.gcp_project_id_2
 
   dynamic "endpoints" {
     for_each = mongodbatlas_privatelink_endpoint.isv_mongodbatlas_pvtlink_endpoint.service_attachment_names

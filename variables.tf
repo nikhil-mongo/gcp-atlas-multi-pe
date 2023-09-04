@@ -31,3 +31,9 @@ variable "gcp_project_name_1" {
 variable "gcp_project_name_2" {
   description = "GCP Project 2 Name"
 }
+variable "endpoint_service_id_1" {
+  description = "Endpoint Service ID for PSC-1"
+}
+variable "endpoint_service_id_2" {
+  description = "Endpoint Service ID for PSC-2"
+}
