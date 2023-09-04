@@ -4,13 +4,13 @@ provider "mongodbatlas" {
 }
 provider "google" {
   credentials = file("")
-  project     = "terraform-gcp-atlas"
-  region      = "europe-west3"
+  project     = var.gcp_project_name_1
+  region      = var.gcp_region
   alias       = "acc1"
 }
 provider "google" {
   credentials = file("")
-  project     = "My Project 25750"
-  region      = "europe-west3"
+  project     = var.gcp_project_name_2
+  region      = var.gcp_region
   alias       = "acc2"
 }

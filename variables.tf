@@ -25,3 +25,9 @@ variable "atlas_region" {
 variable "gcp_region" {
   description = "GCP region to deploy PSC"
 }
+variable "gcp_project_name_1" {
+  description = "GCP Project 1 Name"
+}
+variable "gcp_project_name_2" {
+  description = "GCP Project 2 Name"
+}
