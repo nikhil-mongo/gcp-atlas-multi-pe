@@ -1,15 +1,15 @@
 provider "mongodbatlas" {
-  public_key  = "phfzvxuf"
-  private_key = "218328da-c430-49ee-8461-24b741c31b7a"
+  public_key  = var.public_key
+  private_key = var.private_key
 }
 provider "google" {
-  credentials = file("terraform-gcp-atlas-6789e2772613.json")
+  credentials = file("")
   project     = "terraform-gcp-atlas"
   region      = "europe-west3"
   alias       = "acc1"
 }
 provider "google" {
-  credentials = file("hardy-device-394612-e7642b71bc62.json")
+  credentials = file("")
   project     = "My Project 25750"
   region      = "europe-west3"
   alias       = "acc2"

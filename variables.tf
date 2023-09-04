@@ -13,3 +13,9 @@ variable "psc_ip_count" {
 variable "atlas_project_name" {
   description = "Atlas Project Name"
 }
+variable "public_key" {
+  description = "Atlas API public Key"
+}
+variable "private_key" {
+  description = "Atlas API Private Key"
+}
