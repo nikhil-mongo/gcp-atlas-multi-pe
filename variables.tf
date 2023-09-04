@@ -19,3 +19,9 @@ variable "public_key" {
 variable "private_key" {
   description = "Atlas API Private Key"
 }
+variable "atlas_region" {
+  description = "Atlas region to use for PSC"
+}
+variable "gcp_region" {
+  description = "GCP region to deploy PSC"
+}
